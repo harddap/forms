@@ -1,0 +1,128 @@
+.order {
+    padding: 120px 0;
+    display: flex;
+}
+body {
+    background-color: rgb(24, 17, 46);
+
+}
+.order-wrap {
+    display: flex;
+}
+input {
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    background-color: rgb(208, 203, 203);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.main_title {
+    color: var(--car-repair-secondary, #02133C);
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    margin-bottom:  60px;
+}
+
+
+.title {
+    color: var(--car-repair-primary, #C40B0B);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 56px; /* 58.333% */
+    margin-bottom: 50px;
+}
+
+.pretitle {
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 150px auto 46px auto;
+}
+
+.subtitle {
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+}
+
+.first_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 76px 50px;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+}
+
+.order_textarea {
+    padding: 17px 22px;
+    color: var(--neutral-white, #FFF);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    border: none;
+    height: 150px;
+    background-color: rgb(208, 203, 203);
+    border-radius: 10px;
+    color: #000;
+
+}
+
+.order_btn {
+    background-color: orange;
+    padding: 10px;
+    margin-top: 30px;   
+    border: none;
+    color: #fff;
+    
+}
+.btn_place {
+    display: flex;
+    justify-content: end;
+}
+
+.second_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.from-control {
+    color: red;
+    font-size: 20px;
+    background: #568793;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="order">
+        <div class="container">
+            <div class='order-wrap'>
+                <div class="first_section">
+                    <h1 class="main_title">Make an appointment</h1>
+
+                    <form method="post" action="info" class="forma">
+                        {% csrf_token %}
+                        <div>
+                            <input class='name' type="text" placeholder="Name"/>
+                            <input class='phone'type="text" placeholder="Phone Number"/>
+                        </div>
+                        <div>
+
+                            <input class='email'type="text" placeholder="Email"/>
+                            <input class='select_service' type="text" placeholder="Select Service"/>
+                        </div>
+                            <textarea class='order_textarea' placeholder="Tell us about the car needing service(s)"></textarea>
+                        <div class='btn_place'>
+                        <button type="submit" class="order_btn">Make an Appointment</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="second_section">
+                    <h2 class="pretitle">Maxime placeat facere possimus omnis </h2>
+                    <h1 class="title">17k</h1>
+                    <p class="subtitle">customers served (and counting)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'app/css/news.css' %}">
+    <title>News</title>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.non_field.errors }}
+        <div>
+            <div>
+                <label for='{{ form.title.id_for_label }}'>
+                <div>{{ form.title }}</div>
+                <div>
+                    {{ form.title.errors }}
+                </div>
+            </div>
+
+            <div>
+                <label for='{{ form.content.id_for_label }}'>
+                <div>{{ form.content }}</div>
+                <div>
+                    {{ form.content.errors }}
+                </div>
+            </div>
+
+            <div>
+                <label for='{{ form.is_published.id_for_label }}'>
+                <div>{{ form.is_published }}</div>
+            </div>
+
+            <div>
+                <label for='{{ form.category.id_for_label }}'>
+                <div>{{ form.category }}</div> 
+            </div>
+
+            <p>{{ form.content }}</p>
+            
+        <div>
+            <p>{{ form.is_published }}</p>
+            <p>{{ form.category }}</p>
+        </div>
+           
+            
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
